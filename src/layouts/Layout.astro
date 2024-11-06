@@ -1,50 +1,40 @@
 ---
-interface Props {
-	title: string;
-}
+import { homeText } from "../mock/textViews/homeText"
+import Footer from "./componentsLayout/Footer"
+import Navbar from "./componentsLayout/Navbar"
 
-const { title } = Astro.props;
+const { title, content } = Astro.props
+
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<head>
+			<meta charset="UTF-8" />
+			<meta name="description" content="Astro description" />
+			<meta name="viewport" content="width=device-width" />
+			<link rel="icon" type="image/svg+xml" href={homeText.urlLogo}/>
+			<meta name="generator" content={Astro.generator} />
+			<meta name="description" content={content} />
+			<title>{title}</title>
+			<!-- Enlace fuentes -->
+			<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+			<!-- etiquetas para mejorar SEO organico - optimizan para ser compartidas en redes  -->
+			<meta property="og:title" content={title} />
+			<meta property="og:description" content={content} />
+			<meta property="og:image" content={homeText.imageContentSeo} />
+			<meta property="og:type" content="website" />
+	
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:title" content={title} />
+			<meta name="twitter:description" content={content} />
+			<meta name="twitter:image" content={homeText.imageContentSeo} />
 	</head>
-	<body>
+	<body class="bg-white font-sans overflow-y-scroll font-semibold text-sm md:text-base xl:text-lg">
+		<Navbar client:load />
 		<slot />
 	</body>
+	<Footer client:load/>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
+

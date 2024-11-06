@@ -1,0 +1,8 @@
+export const serviciosText = {
+    metaTitle: "INNOVATEProweb | SERVICIOS",
+    metaContent: "Confía en nosotros. Humanizamos la tecnología para que sea más accesible y cercana, ayudándote a establecer tu presencia en línea o impulsar el crecimiento de tu negocio en la web. Ya sea que necesites un sitio web, una tienda en línea, una aplicación personalizada que resuelva tus problemas, un rediseño de imagen, o la gestión de tus redes sociales, tenemos la solución que buscas.",
+    Subtitle1: "Explora Nuestras Soluciones de Diseño y Espacios Más Innovadores",
+    text1: "En ZONA, nos especializamos en transformar espacios y crear experiencias visuales que se adaptan a cada necesidad. Ya sea a través del diseño de interiores modernos y funcionales, la creación de ambientes de trabajo inspiradores o la redefinición de espacios comerciales, nuestro equipo se dedica a dar vida a conceptos innovadores que conectan con las personas. Creemos en el poder de los espacios como herramienta para fomentar la creatividad, productividad y una conexión emocional profunda con el entorno.",
+    text2: "Estamos comprometidos con el éxito de cada proyecto, y cada uno de nuestros servicios refleja nuestra pasión por el diseño de espacios y el impacto que genera en las personas. Permítenos ayudarte a transformar tu espacio en una experiencia única que inspire, motive y sea memorable. En ZONA, nos enorgullece ver cómo cada espacio cobra vida de manera excepcional. ¡Explora nuestras soluciones y descubre cómo podemos trabajar juntos para hacer de tu entorno algo inigualable!"
+
+}

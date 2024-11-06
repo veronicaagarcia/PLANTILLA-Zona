@@ -1,0 +1,7 @@
+export const proyectosText = {
+    metaTitle: "INNOVATEProweb | PROYECTOS",
+    metaContent: "Confía en nosotros. Humanizamos la tecnología para que sea más accesible y cercana, ayudándote a establecer tu presencia en línea o impulsar el crecimiento de tu negocio en la web. Ya sea que necesites un sitio web, una tienda en línea, una aplicación personalizada que resuelva tus problemas, un rediseño de imagen, o la gestión de tus redes sociales, tenemos la solución que buscas.",
+    Subtitle1: "Descubre algunos de nuestros Proyectos Destacados",
+    text1: "Cada proyecto que realizamos en ZONA cuenta una historia única, un recorrido lleno de creatividad, innovación y compromiso. Desde la transformación de pequeños espacios hasta el diseño de interiores para grandes marcas, hemos trabajado con clientes de distintos sectores para ayudarles a brillar y destacar en sus mercados. Sumérgete en nuestro portafolio y descubre cómo nuestras soluciones personalizadas y enfoques creativos han dado vida a las visiones de nuestros clientes, elevando su presencia y generando resultados impactantes.",
+    text2: "Nuestro compromiso va más allá de la entrega de cada proyecto. En ZONA, continuamos acompañando a nuestros clientes en cada paso de su evolución, asegurándonos de que cada diseño y desarrollo cumpla con los objetivos planteados y siga siendo relevante en un mercado en constante cambio. Nos apasiona hacer que cada idea cobre vida y logre resultados tangibles. Si tienes una visión para tu espacio, estamos aquí para ayudarte a hacerla realidad."
+}

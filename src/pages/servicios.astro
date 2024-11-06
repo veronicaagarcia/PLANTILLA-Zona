@@ -1,0 +1,49 @@
+---
+import Subtitle from '../components/Subtitle'
+import Text from '../components/Text'
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card'
+import { serviciosText } from '../mock/textViews/serviciosText'
+import { Servicios as servicios } from '../mock/Servicios'
+
+---
+
+<Layout title={serviciosText.metaTitle} content={serviciosText.metaContent}>
+	<main class="bg-COLOR1">
+       
+        <section class="w-full mx-auto my-8 px-4 py-8 md:w-11/12 xl:w-10/12 border-2 border-t-0 border-b-0 border-double border-COLOR1 bg-white flex flex-col justify-center items-center" >
+
+            <h2 class="text-center text-lg md:text-xl xl:text-2xl font-heading uppercase text-COLOR1 font-bold animate-fadeInUp">
+                Alguno de nuestros servicios mas requeridos
+            </h2>
+
+			<!-- Primera seccion (subtitulo y texto) -->
+			<Subtitle name={serviciosText.Subtitle1} textColor='COLOR3' client:visible />
+            <Text text={serviciosText.text1} textColor='black/60' client:visible/>
+
+			<!-- detalle de cada servicio, uno bajo al otro -->
+			<div class="flex flex-col items-center justify-center w-full gap-4 md:gap-6 ">
+
+				{servicios.map((servicio, index) => (
+					<Card 
+					  key={index} 
+					  fullWidth={true} 
+					  name={servicio.name} 
+					  text={servicio.text} 
+					  description={servicio.description}
+					  img={servicio.img} 
+					  url='' 
+					  bgColor={servicio.bgColor} 
+					  bgNameColor={servicio.bgNameColor}  
+					  textColor={servicio.textColor}  
+					  textButton="" 
+					  client:visible
+					/>
+				))}
+			</div>
+
+			<!-- texto final -->
+			<Text text={serviciosText.text2} textColor='black/60' client:visible/>
+        </section>
+    </main>
+</Layout>
