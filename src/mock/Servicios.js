@@ -1,5 +1,6 @@
 export const Servicios = [
     {
+        id: "diseño-Espacios",
     name:"Diseño de Espacios",
     text:"Creamos espacios únicos y funcionales que reflejan tu estilo y maximizan cada rincón.",
     description:[
@@ -16,6 +17,7 @@ export const Servicios = [
     textColor:"white"
     },
     {
+        id: "decoracion-Interiores",
     name:"Decoración de Interiores",
     text:"Dale vida a tus espacios con una decoración personalizada que refleja tu esencia.",
     description:[
@@ -32,6 +34,7 @@ export const Servicios = [
     textColor:"white"
     },
     {
+        id: "consultoria-Estilos",
     name:"Consultoría de Estilos",
     text:"Descubre el/los estilos que mejor se adapta a ti y a tus espacios con asesoría experta.",
     description:[
@@ -48,6 +51,7 @@ export const Servicios = [
     textColor:"white"
     },
     {
+        id: "diseño-Mobiliario",
     name:"Diseño de Mobiliario Personalizado",
     text:"Crea piezas únicas que se adapten a tu espacio y estilo, diseñadas exclusivamente para ti.",
     description:[
@@ -64,6 +68,7 @@ export const Servicios = [
     textColor:"white"
     },
     {
+        id: "diseño-Espacios-Comerciales",
     name:"Diseño para Espacios Comerciales",
     text:"Transforma tu negocio en un lugar atractivo y funcional que inspire a tus clientes.",
     description:[

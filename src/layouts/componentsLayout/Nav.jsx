@@ -15,7 +15,7 @@ export default function Nav() {
         </span>
       </a>
       <a href="/servicios" className={`${
-            currentPath === "/servicios" && "underline decoration-COLOR2 font-semibold"
+            currentPath.includes("/servicios") && "underline decoration-COLOR2 font-semibold"
           }`}
         >
       <span className="hover:text-COLOR2 text-center w-full transition-colors duration-150 px-4">
@@ -24,7 +24,7 @@ export default function Nav() {
         </a>
       <a
         href="/proyectos" className={`${
-          currentPath === "/proyectos" && "underline decoration-COLOR2 font-semibold"
+          currentPath.includes("/proyectos") && "underline decoration-COLOR2 font-semibold"
         }`}
       >
       <span className="hover:text-COLOR2 text-center w-full transition-colors duration-150 px-4">
@@ -32,7 +32,7 @@ export default function Nav() {
       </span>
         </a>
       <a href="/nosotros" className={`${
-          currentPath === "/nosotros" && "underline decoration-COLOR2 font-semibold"
+          currentPath.includes("/nosotros") && "underline decoration-COLOR2 font-semibold"
         }`}
       >
       <span className="hover:text-COLOR2 text-center w-full transition-colors duration-150 px-4">
@@ -40,7 +40,7 @@ export default function Nav() {
       </span>
       </a>
       <a href="/contacto" className={`${
-            currentPath === "/contacto" && "underline decoration-COLOR2 font-semibold"
+            currentPath.includes("/contacto") && "underline decoration-COLOR2 font-semibold"
           }`}
         >
       <span className="hover:text-COLOR2 text-center w-full transition-colors duration-150 px-4">

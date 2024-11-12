@@ -14,7 +14,7 @@ import { Servicios as servicios } from '../mock/Servicios'
         <section class="w-full mx-auto my-8 px-4 py-8 md:w-11/12 xl:w-10/12 border-2 border-t-0 border-b-0 border-double border-COLOR1 bg-white flex flex-col justify-center items-center" >
 
             <h2 class="text-center text-lg md:text-xl xl:text-2xl font-heading uppercase text-COLOR1 font-bold animate-fadeInUp">
-                Alguno de nuestros servicios mas requeridos
+                Algunos de nuestros servicios más requeridos
             </h2>
 
 			<!-- Primera seccion (subtitulo y texto) -->
@@ -25,8 +25,10 @@ import { Servicios as servicios } from '../mock/Servicios'
 			<div class="flex flex-col items-center justify-center w-full gap-4 md:gap-6 ">
 
 				{servicios.map((servicio, index) => (
+					<section id={servicio.id} class="flex items-center justify-center self-center mx-auto">
 					<Card 
 					  key={index} 
+					  id={servicio.id}
 					  fullWidth={true} 
 					  name={servicio.name} 
 					  text={servicio.text} 
@@ -39,6 +41,7 @@ import { Servicios as servicios } from '../mock/Servicios'
 					  textButton="" 
 					  client:visible
 					/>
+					</section>
 				))}
 			</div>
 
